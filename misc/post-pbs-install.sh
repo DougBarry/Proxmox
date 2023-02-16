@@ -1,4 +1,10 @@
-#!/usr/bin/env bash -ex
+#!/usr/bin/env bash
+
+# Copyright (c) 2021-2023 tteck
+# Author: tteck (tteckster)
+# License: MIT
+# https://github.com/tteck/Proxmox/raw/main/LICENSE
+
 set -euo pipefail
 shopt -s inherit_errexit nullglob
 YW=$(echo "\033[33m")
@@ -94,7 +100,7 @@ fi
 read -r -p "Disable Subscription Nag? <y/N> " prompt
 if [[ $prompt == "y" || $prompt == "Y" || $prompt == "yes" || $prompt == "Yes" ]]; then
     msg_info "Disabling Subscription Nag"
-    echo "DPkg::Post-Invoke { \"dpkg -V proxmox-widget-toolkit | grep -q '/proxmoxlib\.js$'; if [ \$? -eq 1 ]; then { echo 'Removing subscription nag from UI...'; sed -i '/data.status/{s/\!//;s/Active/NoMoreNagging/}' /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js; }; fi\"; };" >/etc/apt/apt.conf.d/no-nag-script
+    echo "DPkg::Post-Invoke { \"dpkg -V proxmox-widget-toolkit | grep -q '/proxmoxlib\.js$'; if [ \$? -eq 1 ]; then { echo 'Removing subscription nag from UI...'; sed -i '/data.status/{s/\!//;s/active/NoMoreNagging/}' /usr/share/javascript/proxmox-widget-toolkit/proxmoxlib.js; }; fi\"; };" >/etc/apt/apt.conf.d/no-nag-script
     apt --reinstall install proxmox-widget-toolkit &>/dev/null
     msg_ok "Disabled Subscription Nag"
 fi

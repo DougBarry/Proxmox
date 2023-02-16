@@ -1,7 +1,286 @@
-<a href="https://tteck.github.io/Proxmox/"><img src="https://github-readme-stats.vercel.app/api?username=tteck&theme=blue-green" height="130"/></a>
+<a href="https://tteck.github.io/Proxmox/"><img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=tteck&theme=blue-green" height="130"/></a>
 
 # Change Log
 All notable changes to this project will be documented in this file.
+
+## 2023-02-16
+
+### Changed
+
+- **RSTPtoWEB LXC** 
+  - NEW Script
+- **go2rtc LXC** 
+  - NEW Script
+
+## 2023-02-12
+
+### Changed
+
+- **OliveTin** 
+  - NEW Script
+
+## 2023-02-10
+
+### Changed
+
+- **Home Assistant OS VM** 
+  - Code Refactoring
+
+## 2023-02-05
+
+### Changed
+
+- **Devuan LXC** 
+  - NEW Script
+
+## 2023-02-02
+
+### Changed
+
+- **Audiobookshelf LXC** 
+  - NEW Script
+- **Rocky Linux LXC** 
+  - NEW Script
+
+## 2023-01-28
+
+### Changed
+
+- **LXC Cleaner** 
+  - Code refactoring to give the user the option to choose whether cache or logs will be deleted for each app/service.
+  - Leaves directory structure intact
+
+## 2023-01-27
+
+### Changed
+
+- **LXC Cleaner** 
+  - NEW Script
+
+## 2023-01-26
+
+### Changed
+
+- **ALL LXC's** 
+  - Add an option to disable IPv6 (Advanced)
+
+## 2023-01-25
+
+### Changed
+
+- **Home Assistant OS VM** 
+  - switch to v5
+  - add an option to set MTU size (Advanced)
+  - add arch check (no ARM64) (issue from community.home-assistant.io)
+  - add check to insure VMID isn't already used before VM creation (Advanced) (issue from forum.proxmox.com)
+  - code refactoring
+- **PiMox Home Assistant OS VM** 
+  - switch to v5
+  - add an option to set MTU size (Advanced)
+  - add arch check (no AMD64)
+  - add pve check (=>7.2)
+  - add check to insure VMID isn't already used before VM creation (Advanced)
+  - code refactoring
+- **All LXC's** 
+  - add arch check (no ARM64) (issue from forum.proxmox.com)
+
+## 2023-01-24
+
+### Changed
+
+- **Transmission LXC** 
+  - NEW Script
+
+## 2023-01-23
+
+### Changed
+
+- **ALL LXC's** 
+  - Add [Midnight Commander (mc)](https://www.linuxcommand.org/lc3_adv_mc.php)
+
+## 2023-01-22
+
+### Changed
+
+- **Autobrr LXC** 
+  - NEW Script
+
+## 2023-01-21
+
+### Changed
+
+- **Kavita LXC** 
+  - NEW Script
+
+## 2023-01-19
+
+### Changed
+
+- **SABnzbd LXC** 
+  - NEW Script
+
+## 2023-01-17
+
+### Changed
+
+- **Homer LXC** 
+  - NEW Script
+
+## 2023-01-14
+
+### Changed
+
+- **Tdarr LXC** 
+  - NEW Script
+- **Deluge LXC** 
+  - NEW Script
+
+## 2023-01-13
+
+### Changed
+
+- **Lidarr LXC** 
+  - NEW Script
+- **Prowlarr LXC** 
+  - NEW Script
+- **Radarr LXC** 
+  - NEW Script
+- **Readarr LXC** 
+  - NEW Script
+- **Sonarr LXC** 
+  - NEW Script
+- **Whisparr LXC** 
+  - NEW Script
+
+## 2023-01-12
+
+### Changed
+
+- **ALL LXC's** 
+  - Add an option to set MTU size (Advanced)
+
+## 2023-01-11
+
+### Changed
+
+- **Home Assistant Core LXC** 
+  - Auto Initialize
+- **Cronicle Primary/Worker LXC** 
+  - NEW Script
+
+## 2023-01-09
+
+### Changed
+
+- **ALL LXC's** 
+  - v5
+- **k0s Kubernetes LXC** 
+  - NEW Script
+- **Podman LXC** 
+  - NEW Script
+
+## 2023-01-04
+
+### Changed
+
+- **YunoHost LXC** 
+  - NEW Script
+
+## 2022-12-31
+
+### Changed
+
+- **v5 Scripts** (Testing before moving forward https://github.com/tteck/Proxmox/discussions/881)
+  - Adguard Home LXC
+  - Docker LXC
+  - Home Assistant Core LXC
+  - PhotoPrism LXC
+  - Shinobi NVR LXC
+  - Vaultwarden LXC
+
+## 2022-12-27
+
+### Changed
+
+- **Home Assistant Container LXC** 
+  - Add an option to use Fuse Overlayfs (ZFS) (Advanced)
+
+- **Docker LXC** 
+  - Add an option to use Fuse Overlayfs (ZFS) (Advanced)
+  - If the LXC is created Privileged, the script will automatically set up USB passthrough.
+
+## 2022-12-22
+
+### Changed
+
+- **All LXC's** 
+  - Add an option to run the script in Verbose Mode (Advanced)
+
+## 2022-12-20
+
+### Changed
+
+- **Hyperion LXC** 
+  - NEW Script
+
+## 2022-12-17
+
+### Changed
+
+- **Home Assistant Core LXC** 
+  - Linux D-Bus Message Broker
+  - Mariadb & PostgreSQL Ready
+  - Bluetooth Ready
+  - Fix for Inconsistent Dependency Versions (dbus-fast & bleak)
+
+## 2022-12-16
+
+### Changed
+
+- **Home Assistant Core LXC** 
+  - Python 3.10.8
+
+## 2022-12-09
+
+### Changed
+
+- **Change Detection LXC** 
+  - NEW Script
+
+## 2022-12-03
+
+### Changed
+
+- **All LXC's** 
+  - Add options to set DNS Server IP Address and DNS Search Domain (Advanced)
+
+## 2022-11-27
+
+### Changed
+
+- **Shinobi LXC** 
+  - NEW Script
+
+## 2022-11-24
+
+### Changed
+
+- **Home Assistant OS VM** 
+  - Add option to set machine type during VM creation (Advanced)
+
+## 2022-11-23
+
+### Changed
+
+- **All LXC's** 
+  - Add option to enable root ssh access during LXC creation (Advanced)
+
+## 2022-11-21
+
+### Changed
+
+- **Proxmox LXC Updater** 
+  - Now updates Ubuntu, Debian, Devuan, Alpine Linux, CentOS-Rocky-Alma, Fedora, ArchLinux [(@Uruknara)](https://github.com/tteck/Proxmox/commits?author=Uruknara)
 
 ## 2022-11-13
 

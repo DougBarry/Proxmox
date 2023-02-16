@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
+
+# Copyright (c) 2021-2023 tteck
+# Author: tteck (tteckster)
+# License: MIT
+# https://github.com/tteck/Proxmox/raw/main/LICENSE
+
 YW=$(echo "\033[33m")
 BL=$(echo "\033[36m")
 RD=$(echo "\033[01;31m")
@@ -27,7 +33,7 @@ function error_exit() {
     echo -e "$flag $msg" 1>&2
     exit $EXIT
 }
-
+if command -v pveversion >/dev/null 2>&1; then echo -e "⚠️  Can't Install on Proxmox "; exit; fi
 while true; do
     read -p "This will Install ${APP} on $hostname. Proceed(y/n)?" yn
     case $yn in
